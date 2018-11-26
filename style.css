@@ -1,0 +1,62 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Theme URI:    http://example.com/twenty-seventeen-child/
+ Description:  Twenty Seventeen Child Theme
+ Author:       jose
+ Author URI:   http://example.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-seventeen-child
+*/
+/* =Aquí empieza la personalización de tu tema
+
+
+
+-------------------------------------------------------------- */
+@import url("/wordpress/wp-content/themes/twentyseventeen/style.css");
+
+.site-info a{
+color:red;
+display:none;
+}
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+    color: #000;
+
+}
+
+.titulos { /*titulos de los posts en el main*/
+	color: blue;
+	text-decoration: none;
+	font-size:50px;
+	font-family:'open-sans';
+}
+
+
+h1.site-title{
+    color:#000;
+}
+body.has-header-image .site-description, body.has-header-video .site-description {
+    color: #000;
+    opacity: 0.8;
+    font-family:'open-sans';
+}
+h2.widget-title {
+    color: blue;
+    font-size: 20px;
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.1818em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+.site-main{
+    background-color:#76b884
+    ;
+}
+
+.widget-area{
+    background-color:#76b884;
+}
