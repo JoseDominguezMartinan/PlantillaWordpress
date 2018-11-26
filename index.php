@@ -15,8 +15,9 @@
  * @version 1.0
  */
 
-get_header(); ?>
+get_header(); 
 
+?>
 <div class="wrap">
 	<?php if ( is_home() && ! is_front_page() ) : ?>
 		<header class="page-header">
@@ -26,7 +27,9 @@ get_header(); ?>
 	<header class="page-header">
 		<h2 class="page-title"><?php _e( 'Entradas', 'twentyseventeen' ); ?></h2>
 	</header>
-	<?php endif; ?>
+	<?php
+	get_sidebar();
+	endif; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -57,7 +60,7 @@ get_header(); ?>
 						<td>
 							<div style="border: 0.1px solid rgb(0,0,0);">
 							<?php
-							the_post_thumbnail(); // para recoger la imagen 
+						//	the_post_thumbnail(); // para recoger la imagen 
 							?>
 							</div>
 						</td>
