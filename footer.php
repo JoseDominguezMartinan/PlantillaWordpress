@@ -37,10 +37,17 @@
 
 				get_template_part( 'template-parts/footer/site', 'info' );
 				
+				
+				// a continuacion añadimos el area de widgets al footer para poder mostrar widgets en el, este area esta descrit
+				//en functions.php
 				?>
-				<aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Blog Sidebar', 'twentyseventeen' ); ?>">
+				
+				<aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'footer widget', 'twentyseventeen' ); ?>">
 				<?php dynamic_sidebar( 'footer-widget' ); ?>
 				</aside><!-- #secondary -->
+				<aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'footer sidebar', 'twentyseventeen' ); ?>">
+	<?php dynamic_sidebar( 'footer-widget-2' ); ?>
+</aside><!-- #secondary -->
 
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
