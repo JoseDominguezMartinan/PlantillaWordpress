@@ -23,7 +23,7 @@ color:red;
 display:none;
 }
 body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
-    color: #000;
+    color: #EAE4E4;
 
 }
 
@@ -36,10 +36,10 @@ body.has-header-image .site-title, body.has-header-video .site-title, body.has-h
 
 
 h1.site-title{
-    color:#000;
+    color:#FFFFFF;
 }
 body.has-header-image .site-description, body.has-header-video .site-description {
-    color: #000;
+    color: #FFFFFF;
     opacity: 0.8;
     font-family:'open-sans';
 }
@@ -53,12 +53,12 @@ h2.widget-title {
     text-transform: uppercase;
 }
 .site-main{
-    background-color:#76b884
+    background-color:#EAE4E4
     ;
 }
 
 .widget-area{
-    background-color:#76b884;
+    background-color:#EAE4E4;
 }
 /*
 */

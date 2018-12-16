@@ -9,8 +9,9 @@
  * @since 1.0
  * @version 1.0
  */
-/* 
-get_header(); ?>
+ 
+
+ get_header(); ?>
 
 <div class="wrap">
 	<div id="primary" class="content-area">
@@ -21,6 +22,7 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/post/content', get_post_format() );
+				the_post_thumbnail();
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
@@ -37,7 +39,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
+
 </div><!-- .wrap -->
-<?php get_sidebar(); ?>
+
 

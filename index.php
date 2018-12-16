@@ -40,7 +40,8 @@ get_header();
 				/* Start the Loop */
 				while ( have_posts() ):
 				the_post();
-			
+				// filtramos para que nos aparezcan solo los que estan en la categoria 1
+				if (in_category ('1')):
 				?>
 					<?php
 				the_date();
@@ -53,37 +54,15 @@ get_header();
 					<?php the_title(); ?></a>
 					</b>
 				</h1>
-				<hr>
-				<br><br>
-				<table>
-					<tr>
-						<td>
-							<div style="border: 0.1px solid rgb(0,0,0);">
-							<?php
-						//	the_post_thumbnail(); // para recoger la imagen 
-							?>
-							</div>
-						</td>
-						
-						<td>
-							<?php
-							the_content();
-							?>	
-						</td>
-						
-					</tr>
-					
-				</table>
-
-				<hr>
-				<br><br>
+			
 				<?php
 				the_author();
 				?>
 			 	
 				<br><br>
 			<?php
-				//the_excerpt(); // para recoger el resumen
+				the_excerpt(); // para recoger el resumen
+				endif;
 				endwhile;
 
 				the_posts_pagination( array(
